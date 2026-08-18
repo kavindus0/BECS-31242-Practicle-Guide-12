@@ -42,12 +42,12 @@
             viewToolStripMenuItem1 = new ToolStripMenuItem();
             logsToolStripMenuItem = new ToolStripMenuItem();
             label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtStdID = new TextBox();
+            txtMarks = new TextBox();
             listBox1 = new ListBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            textBox3 = new TextBox();
+            rbCompulsory = new RadioButton();
+            rbOptional = new RadioButton();
+            txtGrade = new TextBox();
             contextMenuStrip2.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -156,19 +156,19 @@
             label6.TabIndex = 9;
             label6.Text = "Student Grade Managment System";
             // 
-            // textBox1
+            // txtStdID
             // 
-            textBox1.Location = new Point(223, 108);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(399, 27);
-            textBox1.TabIndex = 10;
+            txtStdID.Location = new Point(223, 108);
+            txtStdID.Name = "txtStdID";
+            txtStdID.Size = new Size(399, 27);
+            txtStdID.TabIndex = 10;
             // 
-            // textBox2
+            // txtMarks
             // 
-            textBox2.Location = new Point(223, 286);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(399, 27);
-            textBox2.TabIndex = 11;
+            txtMarks.Location = new Point(223, 286);
+            txtMarks.Name = "txtMarks";
+            txtMarks.Size = new Size(399, 27);
+            txtMarks.TabIndex = 11;
             // 
             // listBox1
             // 
@@ -179,46 +179,47 @@
             listBox1.Size = new Size(396, 24);
             listBox1.TabIndex = 12;
             // 
-            // radioButton1
+            // rbCompulsory
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(233, 230);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(117, 24);
-            radioButton1.TabIndex = 13;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            rbCompulsory.AutoSize = true;
+            rbCompulsory.Location = new Point(233, 230);
+            rbCompulsory.Name = "rbCompulsory";
+            rbCompulsory.Size = new Size(108, 24);
+            rbCompulsory.TabIndex = 13;
+            rbCompulsory.TabStop = true;
+            rbCompulsory.Text = "Compulsary";
+            rbCompulsory.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbOptional
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(443, 230);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(117, 24);
-            radioButton2.TabIndex = 14;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            rbOptional.AutoSize = true;
+            rbOptional.Location = new Point(443, 230);
+            rbOptional.Name = "rbOptional";
+            rbOptional.Size = new Size(88, 24);
+            rbOptional.TabIndex = 14;
+            rbOptional.TabStop = true;
+            rbOptional.Text = "Optional";
+            rbOptional.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtGrade
             // 
-            textBox3.Location = new Point(223, 338);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(399, 27);
-            textBox3.TabIndex = 15;
+            txtGrade.Location = new Point(223, 338);
+            txtGrade.Name = "txtGrade";
+            txtGrade.ReadOnly = true;
+            txtGrade.Size = new Size(399, 27);
+            txtGrade.TabIndex = 15;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox3);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
+            Controls.Add(txtGrade);
+            Controls.Add(rbOptional);
+            Controls.Add(rbCompulsory);
             Controls.Add(listBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtMarks);
+            Controls.Add(txtStdID);
             Controls.Add(label6);
             Controls.Add(menuStrip1);
             Controls.Add(label5);
@@ -252,11 +253,11 @@
         private ToolStripMenuItem viewToolStripMenuItem1;
         private ToolStripMenuItem logsToolStripMenuItem;
         private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtStdID;
+        private TextBox txtMarks;
         private ListBox listBox1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private TextBox textBox3;
+        private RadioButton rbCompulsory;
+        private RadioButton rbOptional;
+        public TextBox txtGrade;
     }
 }
