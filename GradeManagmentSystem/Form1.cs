@@ -21,5 +21,30 @@ namespace GradeManagmentSystem
         {
 
         }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            String marks = txtMarks.Text;
+            int mark2 = int.Parse(marks);
+            if (mark2 >= 75)
+            {
+                txtGrade.Text = "A";
+            } else if (mark2 >= 65)
+            {
+                txtGrade.Text = "B";
+            }
+            else if (mark2 >= 55)
+            {
+                txtGrade.Text = "C";
+            }
+            else if (mark2 >= 35)
+            {
+                txtGrade.Text = "S";
+            }
+            else
+            {
+                txtGrade.Text = "F";
+            }
+        }
     }
 }

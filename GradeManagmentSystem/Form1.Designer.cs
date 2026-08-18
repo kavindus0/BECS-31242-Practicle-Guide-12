@@ -48,6 +48,7 @@
             rbCompulsory = new RadioButton();
             rbOptional = new RadioButton();
             txtGrade = new TextBox();
+            Add = new Button();
             contextMenuStrip2.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -209,11 +210,22 @@
             txtGrade.Size = new Size(399, 27);
             txtGrade.TabIndex = 15;
             // 
+            // Add
+            // 
+            Add.Location = new Point(615, 401);
+            Add.Name = "Add";
+            Add.Size = new Size(94, 29);
+            Add.TabIndex = 16;
+            Add.Text = "Add";
+            Add.UseVisualStyleBackColor = true;
+            Add.Click += Add_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Add);
             Controls.Add(txtGrade);
             Controls.Add(rbOptional);
             Controls.Add(rbCompulsory);
@@ -259,5 +271,6 @@
         private RadioButton rbCompulsory;
         private RadioButton rbOptional;
         public TextBox txtGrade;
+        private Button Add;
     }
 }
