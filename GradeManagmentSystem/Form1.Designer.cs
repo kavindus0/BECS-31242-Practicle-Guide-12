@@ -40,6 +40,8 @@
             contextMenuStrip3 = new ContextMenuStrip(components);
             menuStrip1 = new MenuStrip();
             viewToolStripMenuItem1 = new ToolStripMenuItem();
+            gradeBookToolStripMenuItem = new ToolStripMenuItem();
+            gradeSummaryToolStripMenuItem = new ToolStripMenuItem();
             logsToolStripMenuItem = new ToolStripMenuItem();
             label6 = new Label();
             txtStdID = new TextBox();
@@ -136,10 +138,25 @@
             // 
             // viewToolStripMenuItem1
             // 
+            viewToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { gradeBookToolStripMenuItem, gradeSummaryToolStripMenuItem });
             viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
             viewToolStripMenuItem1.Size = new Size(55, 24);
             viewToolStripMenuItem1.Text = "View";
             viewToolStripMenuItem1.Click += viewToolStripMenuItem1_Click;
+            // 
+            // gradeBookToolStripMenuItem
+            // 
+            gradeBookToolStripMenuItem.Name = "gradeBookToolStripMenuItem";
+            gradeBookToolStripMenuItem.Size = new Size(224, 26);
+            gradeBookToolStripMenuItem.Text = "Grade Book";
+            gradeBookToolStripMenuItem.Click += gradeBookToolStripMenuItem_Click;
+            // 
+            // gradeSummaryToolStripMenuItem
+            // 
+            gradeSummaryToolStripMenuItem.Name = "gradeSummaryToolStripMenuItem";
+            gradeSummaryToolStripMenuItem.Size = new Size(224, 26);
+            gradeSummaryToolStripMenuItem.Text = "Grade Summary";
+            gradeSummaryToolStripMenuItem.Click += gradeSummaryToolStripMenuItem_Click;
             // 
             // logsToolStripMenuItem
             // 
@@ -151,7 +168,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label6.Location = new Point(189, 0);
+            label6.Location = new Point(297, 45);
             label6.Name = "label6";
             label6.Size = new Size(463, 37);
             label6.TabIndex = 9;
@@ -173,12 +190,11 @@
             // 
             // listBox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Items.AddRange(new object[] { "COSC 31102", "COST 31112", "BECS 32242" });
-            listBox1.Location = new Point(223, 164);
+            listBox1.Items.AddRange(new object[] { "BECS", "COSC", "COST" });
+            listBox1.Location = new Point(221, 161);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(396, 24);
-            listBox1.TabIndex = 12;
+            listBox1.Size = new Size(401, 24);
+            listBox1.TabIndex = 17;
             // 
             // rbCompulsory
             // 
@@ -272,5 +288,7 @@
         private RadioButton rbOptional;
         public TextBox txtGrade;
         private Button Add;
+        private ToolStripMenuItem gradeBookToolStripMenuItem;
+        private ToolStripMenuItem gradeSummaryToolStripMenuItem;
     }
 }
